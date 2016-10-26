@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>LVCC Scholarship Examination</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <style rel="stylesheet">
+        
+        main{
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+        }
+        
+        .extra-margins {
+            margin-top: 1rem;
+            margin-bottom: 2.5rem;
+        }
+        
+        .jumbotron {
+            text-align: center;
+        }
+
+        body{
+            overflow: hidden;
+        }
+
+        h3{
+            margin: 20px;
+            min-height: 180px;
+        }
+
+        h1{
+            font-weight: bold;
+            margin: 20px;
+            
+        }
+
+        #timming{
+            float: right;
+            margin-top: -20px;
+         
+
+
+        }
+
+        label, input{
+
+            font-size: 17px;
+            text-align: left;
+
+        }
+
+        .container{
+            min-width: 400px;
+            max-width: 1000px;
+            overflow: hidden;
+        }
+
+        #top{
+            text-align: center;
+        }
+
+        #ques{
+            margin-top: 15px;
+            padding-bottom: 10px;
+        }
+
+        #examType{
+            margin-bottom: -30px;
+        }
+
+        input[type=radio]:checked ~ label{
+        font-weight: bold;
+        text-align: left;
+        }
+        
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+        <div id="top" >
+                <h1 id="examType"> Examination Type</h1>
+        </div>
+
+        
+            <br>
+                <br>
+            <div class="jumbotron">    
+                <span id="timming" style="margin-left: 20px;" >TIME: <span id="span_timer" ></span></span> 
+                <div id="content">
+                    <div id="ques" class="animated button zoomIn">
+                    <div class="card"> 
+
+                            
+                        <br><h3 class="h2-responsive"><span id="question" class="animated button zoomIn"></span></h3>
+         
+                    </div><br>
+                    </div>
+                        
+                    <div  id="choices" class="col-md-12">
+                    
+                        <!--This is where the questions and choices goes-->
+                   
+                    </div>                        
+                <br><br><hr><p><a id="submit" class="btn btn-primary">Submit Answer</a></p>
+            </div>
+       </div>
+    </main>
+
+
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <!-- Exam JavaScript -->
+    <script type="text/javascript" src="js/questions.js"></script>
+    <script type="text/javascript" src="js/function.js"></script>
+
+
+
+
+</body>
+
+</html>
