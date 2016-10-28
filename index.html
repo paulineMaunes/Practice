@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/mdb.min.css" rel="stylesheet">
-    <style rel="stylesheet">
-        
+    <link rel="stylesheet">
+<style type="text/css">
+
         main{
             padding-top: 3rem;
             padding-bottom: 2rem;
@@ -30,95 +31,154 @@
 
         body{
             overflow: hidden;
-        }
-
-        h3{
-            margin: 20px;
-            min-height: 180px;
-        }
-
-        h1{
-            font-weight: bold;
-            margin: 20px;
-            
-        }
-
-        #timming{
-            float: right;
-            margin-top: -20px;
-         
-
-
-        }
-
-        label, input{
-
-            font-size: 17px;
-            text-align: left;
-
-        }
-
-        .container{
-            min-width: 400px;
-            max-width: 1000px;
+            background-image: url("img/bg.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color:  #f4f5f6;
             overflow: hidden;
         }
 
-        #top{
+        h3{
+
+            background-color:  #dddfe6;
+            min-height: 180px;
+            margin: 5px;
+            padding-top: 30px;
+            padding: 20px;
+        }
+
+      
+
+      
+
+        #timming{
+            float: center;
+            font-size: 100%;
+            font-weight: bolder;
+            padding-top: 20%;
+            height: 100%;
+            background-image: url("img/top.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin-bottom: -40px;
+
+
+
+        }
+
+        label{
+            max-width: 80%;
+            min-width: 80%;
+            min-height: 150%;
+            max-height: 150%;
+            font-size: 17px;
             text-align: center;
+            color: black;
+            
+
         }
 
-        #ques{
-            margin-top: 15px;
-            padding-bottom: 10px;
-        }
+        
 
-        #examType{
+           #examType{
             margin-bottom: -30px;
         }
 
         input[type=radio]:checked ~ label{
-        font-weight: bold;
-        text-align: left;
+            font-weight: bold;
+            text-align: center;
+
         }
+
+
+        input[type=radio] {    
+          vertical-align: middle;
+          text-align: center;
+          display: block;
+          margin: 0 auto;
+          visibility: hidden;
+        }
+
+        .jumbotron{       
+        background-color: transparent;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            overflow: hidden;
         
+        }
+
+        #ques{
+            min-height: 90px;
+            margin: -10px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #fcfcfc;
+        }
 
 
-    </style>
+        .btn-block,label{
+            cursor: pointer;
+        }
 
+        #style{
+            min-width: 80%;
+            max-width: 80%;
+            border-radius: 5px;
+            border-style: dotted;
+            border-color: white;
+            border-width: .5px;
+        }
+
+        #style:checked{
+
+            border-color: black;
+        }
+        #style:hover{
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        }
+     
+        #content{
+            margin-top: -5%;
+        }
+
+       
+       
+
+       
+
+
+        
+</style>
 </head>
 
 <body>
 
     <main>
         <div class="container">
-        <div id="top" >
-                <h1 id="examType"> Examination Type</h1>
-        </div>
-
-        
-            <br>
-                <br>
             <div class="jumbotron">    
-                <span id="timming" style="margin-left: 20px;" >TIME: <span id="span_timer" ></span></span> 
+                
                 <div id="content">
-                    <div id="ques" class="animated button zoomIn">
-                    <div class="card"> 
-
-                            
-                        <br><h3 class="h2-responsive"><span id="question" class="animated button zoomIn"></span></h3>
-         
-                    </div><br>
-                    </div>
+                   
+                <div id="timming" >TIME: <span id="span_timer" ></span></div> 
+                
+                    
+                        <div id="ques" class="animated button zoomIn">
+                           <h3 class="h3-responsive "><br><span id="question"></span></h3>
                         
-                    <div  id="choices" class="col-md-12">
+                        </div>
+                        
+                    <div  id="choices" >
+                      
+                        
                     
                         <!--This is where the questions and choices goes-->
-                   
+                    
                     </div>                        
-                <br><br><hr><p><a id="submit" class="btn btn-primary">Submit Answer</a></p>
+                <hr><p><a id="submit" class="btn btn-primary">Submit Answer</a></p>
             </div>
        </div>
+   </div>
     </main>
 
 
