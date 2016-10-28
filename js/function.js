@@ -18,7 +18,7 @@
         //consolef.log(i);
         time = time - 1;
         if(time < 0) {
-          //alert("Times Up!");
+          //Times Up!");
           checkAnswer();
           time_container.style.color = "transparent";
           
@@ -44,10 +44,10 @@
         choicesHtml = "";
       // loop through choices, and create radio buttons
        for (var i = 0; i < choices.length; i++) {
-        choicesHtml += "<div class='col-md-4'><input type='radio' class='animated button fadeInUp' name='quiz" + currentQuestion +
+        choicesHtml += "<div id='style' class='btn-group  animated button fadeInUp waves-effect btn-block'><input type='radio' name='quiz" + currentQuestion +
           "' id='choice" + (i + 1) +
           "' value='" + choices[i] + "'>" +
-          " <label class='animated button fadeInUp' for='choice" + (i + 1) + "'>" + choices[i] + "</label></div>";
+          " <label for='choice" + (i + 1) + "'>" + choices[i] + "</label></div>";
 
         
       }
@@ -83,7 +83,7 @@
 
             var labelStyle = document.getElementsByTagName("label")[correctIndex].style;
             labelStyle.fontWeight = "bold";
-            labelStyle.color = "green";
+            labelStyle.color = "#3b5998";
 
 
             if (userpick == quiz[currentQuestion].correct) {
@@ -116,7 +116,7 @@
     function showFinalResults() {
         var stime = document.getElementById('timming'),
             cat = document.getElementById('examType');
-        content.innerHTML = "<br><h2>You've completed the quiz!</h2>" +
+        content.innerHTML = "<br><h2>Thank you!</h2>" +
         "<h2>Below are your results:</h2>" +
         "<h2>" + score + " out of " + quiz.length + " questions, " +
         Math.round(score / quiz.length * 100) + "%</h2>";
