@@ -1,188 +1,180 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
+    <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>LVCC Scholarship Examination</title>
+        <title>LVCC Scholarship Examination</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/mdb.min.css" rel="stylesheet">
-    <link rel="stylesheet">
-<style type="text/css">
-        main{
-        
-            padding-bottom: 2rem;
-        }
-        
-        .extra-margins {
-            margin-top: 1rem;
-            margin-bottom: 2.5rem;
-        }
-        
-        body{
-            overflow: hidden;
-            background-image: url("img/bg.png");
-            background-repeat: repeat-y;
-            background-size: cover;
-            background-color:  black;
-            overflow: hidden;
-        }
-        h3{
-            background-color:  #dddfe6;
-            min-height: 180px;
-            margin: 5px;
-            padding-top: 30px;
-            padding: 20px;
-        }
-      
-      
-        #timming{
-            text-align: center;
-            float: center;
-            font-size: 20px;
-            font-weight: bolder;
-            padding-top: 20%;
-            height: 100%;
-            background-image: url("img/top.png");
-            background-size: 100%;
-            background-repeat: no-repeat;
-            margin-bottom: -33px;
-        }
-        label{
-            max-width: 80%;
-            min-width: 80%;
-            min-height: 150%;
-            max-height: 150%;
-            font-size: 17px;
-            text-align: center;
-            color: black;
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/mdb.min.css" rel="stylesheet">
+        <link rel="stylesheet">
+    <style type="text/css">
+            main{
             
-        }
-        
-           #examType{
-            margin-bottom: -30px;
-        }
-        input[type=radio]:checked ~ label{
-            font-weight: bold;
-            text-align: center;
-        }
-        input[type=radio] {    
-          vertical-align: middle;
-          text-align: center;
-          display: block;
-          margin: 0 auto;
-          visibility: hidden;
-        }
-
-        .jumbotron{     
-            padding-top: -3%;  
-            background-image: url("img/container2.png");
-            background-color: transparent;
-            background-repeat: repeat-y;
-            background-size: 100%;
-            overflow: hidden;
-            text-align: center;
-        }
-        #ques{
-            min-height: 90px;
-            margin: -10px;
-            margin-bottom: 20px;
-            margin-top: 20px;
-            padding: 10px;
-            background-color: white;
-        }
-        .btn-block,label{
-            cursor: pointer;
-        }
-        #style{
-            min-width: 80%;
-            max-width: 80%;
-            border-radius: 5px;
-            border-style: dotted;
-            border-color: white;
-            border-width: .5px;
-        }
-        #style:checked{
-            border-color: black;
-        }
-        #style:hover{
-            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-        }
-     
-        #content{
-            margin-top: -5%;
-        }
-        #questionaire{
-            background-color: transparent;
-            margin: -5%;
-            padding: 5%;
-        }
-       
-       
-       
-        
-</style>
-</head>
-
-<body>
-
-    <main>
-        <div class="container">
-            <div id="timming" >TIME: <span id="span_timer" ></span></div> 
-            <div class="jumbotron">    
+                padding-bottom: 2rem;
+            }
+            
+            .extra-margins {
+                margin-top: 1rem;
+                margin-bottom: 2.5rem;
+            }
+            
+            body{
+                overflow: hidden;
+                background-image: url("img/bg.png");
+                background-repeat: repeat-y;
+                background-size: cover;
+                background-color:  black;
+                overflow: hidden;
+            }
+            h3{
+                background-color:  #dddfe6;
+                min-height: 180px;
+                margin: 5px;
+                padding-top: 30px;
+                padding: 20px;
+            }
+          
+          
+            #timming{
+                text-align: center;
+                float: center;
+                font-size: 20px;
+                font-weight: bolder;
+                padding-top: 20%;
+                height: 100%;
+                background-image: url("img/top.png");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                margin-bottom: -33px;
+            }
+            label{
+                max-width: 80%;
+                min-width: 80%;
+                min-height: 150%;
+                max-height: 150%;
+                font-size: 17px;
+                text-align: center;
+                color: black;
                 
-                <div id="content">
-                   
+            }
+            
+               #examType{
+                margin-bottom: -30px;
+            }
+            input[type=radio]:checked ~ label{
+                font-weight: bold;
+                text-align: center;
+            }
+            input[type=radio] {    
+              vertical-align: middle;
+              text-align: center;
+              display: block;
+              margin: 0 auto;
+              visibility: hidden;
+            }
+
+            .jumbotron{     
+              
+                background-image: url("img/container2.png");
+                background-color: transparent;
+                background-repeat: repeat-y;
+                background-size: 100%;
+                overflow: hidden;
+                text-align: center;
+            }
+            #ques{
+                min-height: 90px;
+                margin: -10px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                padding: 10px;
+                background-color: white;
+            }
+            .btn-block,label{
+                cursor: pointer;
+            }
+            #style{
+                min-width: 80%;
+                max-width: 80%;
+                border-radius: 5px;
+                border-style: dotted;
+                border-color: white;
+                border-width: .5px;
+            }
+            #style:checked{
+                border-color: black;
+            }
+            #style:hover{
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            }
+         
+            #content{
+                margin-top: -5%;
+            }
+            #questionaire{
+                background-color: transparent;
+                margin: -5%;
+                padding-top: 3%;
+                padding-left: 5%;
+                padding-right: 5%;
+                padding-bottom: 7%;
                 
-                
-                    <div id="questionaire">
-                        <div id="ques" class="animated button zoomIn">
-                           <h3 class="h3-responsive "><br><span id="question"></span></h3></div>
-                        
-                       
-                        
-                    <div  id="choices" >
-                      
-                        
-                    
-                        <!--This is where the questions and choices goes-->
-                    
-                    </div>                        
-                <hr><p><a id="submit" class="btn btn-primary">Submit Answer</a></p>
+            }
+           
+           
+           
+            
+    </style>
+    </head>
 
-            </div>            
-       </div>
-   </div>
-    </main>
+    <body>
 
-
-
-    <!-- SCRIPTS -->
-
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
-
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/tether.min.js"></script>
-
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-
-    <!-- Exam JavaScript -->
-    <script type="text/javascript" src="js/questions.js"></script>
-    <script type="text/javascript" src="js/function.js"></script>
+        <main>
+            <div class="container">
+                <div id="timming" >TIME: <span id="span_timer" ></span></div> 
+                    <div class="jumbotron">    
+                        <div id="content">                    
+                            <div id="questionaire">
+                                <div id="ques" class="animated button zoomIn">
+                                    <h3 class="h3-responsive "><br><span id="question"></span></h3>
+                                </div>
+                                <div  id="choices" ></div>                        
+                                <hr><a id="submit" class="btn btn-primary">Submit Answer</a>
+                            </div>            
+                        </div>
+                    </div>
+            </div>
+        </main>
 
 
 
+        <!-- SCRIPTS -->
 
-</body>
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
 
-</html>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/tether.min.js"></script>
+
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+
+        <!-- Exam JavaScript -->
+        <script type="text/javascript" src="js/questions.js"></script>
+        <script type="text/javascript" src="js/function.js"></script>
+
+
+
+
+    </body>
+
+    </html>
