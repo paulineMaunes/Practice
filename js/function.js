@@ -116,18 +116,14 @@
     function showFinalResults() {
         var stime = document.getElementById('timming'),
             cat = document.getElementById('examType');
-        content.innerHTML = "<br><h2>Thank you!</h2>" +
+        content.innerHTML = "<br><h2><br>Thank you!</h2>" +
         "<h2>Below are your results:</h2>" +
         "<h2>" + score + " out of " + quiz.length + " questions, " +
         Math.round(score / quiz.length * 100) + "%</h2>";
         time = 0;
-        stime.style.visibility = "hidden";
-        cat.style.color = "transparent";
-        window.alert = function(){
-          window.alert = function(text){
-            "andadshkajhd";
-          }
-        }
+        stime.style.color = "transparent";
+        
+
     }
 
     window.addEventListener("load", askQuestion, false);
