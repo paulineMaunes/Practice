@@ -122,7 +122,7 @@
         Math.round(score / quiz.length * 100) + "%</h2>";
         time = 0;
         stime.style.color = "transparent";
-        content.innerHTML.style.backgroundColor = "white"
+        content.innerHTML.style.backgroundColor = "white";
      
 
     }
