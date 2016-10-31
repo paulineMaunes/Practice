@@ -8,7 +8,7 @@
       currentQuestion = 0,
       quesnum = 0,
       score = 0,
-      time = 4,
+      time = 100,
       askingQuestion = true;
 
 
