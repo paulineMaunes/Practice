@@ -1,39 +1,5 @@
     // var life = 3;
-    var time_container = document.getElementById('span_timer');  
-      content = $("content"),
-      questionContainer = $("question"),
-      choicesContainer = $("choices"),
-      scoreContainer = $("score"),
-      submitBtn = $("submit"),
-      currentQuestion = 0,
-      quesnum = 0,
-      score = 0,
-      time = 100,
-      askingQuestion = true;
-
-
-
-    function timer() { 
-      var timerId = setInterval(function() {
-        //consolef.log(i);
-        time = time - 1;
-        if(time < 0) {
-          //Times Up!");
-          checkAnswer();
-          time_container.style.color = "transparent";
-          
-        }else if(time < 4) {
-          time_container.style.color = "red"; 
-          time_container.innerHTML = time;
-        }else{
-          time_container.innerHTML = time;
-        }
-      }, 1000);
-    }
-    
-
-    timer();
-
+   
 
     function $(id) { // shortcut for document.getElementById
       return document.getElementById(id);
