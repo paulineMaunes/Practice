@@ -105,7 +105,7 @@
             if (currentQuestion < quiz.length - 1) {
               currentQuestion++;
               askQuestion();
-              time = 4;}
+              time = 100;}
 
             else {
               showFinalResults();}
